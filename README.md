@@ -22,6 +22,7 @@ def update(mean1, var1, mean2, var2):
     new_var = 1 / (1 / var1 + 1  / var2)
     return [new_mean, new_var]
 ```
+<img src="https://github.com/ChenBohan/Auto-Car-Perception-01-Kalman-Filters/blob/master/readme_img/gaussian_motion.png" width = "50%" height = "50%" div align=center />
 
 ### Predict
 
@@ -35,8 +36,8 @@ def predict(mean1, var1, mean2, var2):
     new_mean = mean1 + mean2
     new_var = var1 + var2
     return [new_mean, new_var]
-
 ```
+<img src="https://github.com/ChenBohan/Auto-Car-Perception-01-Kalman-Filters/blob/master/readme_img/measurement_update.png" width = "50%" height = "50%" div align=center />
 
 ## Multi-dimension Kalman Filter
 <img src="https://github.com/ChenBohan/Auto-Car-Perception-01-Kalman-Filters/blob/master/readme_img/formula.jpg" width = "70%" height = "70%" div align=center />
