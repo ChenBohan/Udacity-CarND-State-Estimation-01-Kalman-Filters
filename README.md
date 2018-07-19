@@ -1,6 +1,6 @@
 # Auto-Car-Perception-01-Kalman-Filters
 Udacity Self-Driving Car Engineer Nanodegree: Kalman Filters
-## Content of this repo
+## Content of this repository
 - `kalman_filter_1d.py` functions for 1d kalman filter.
 - `main_1d.py` a 1d kalman filter example.
 - `kalman_filter_md.py` functions for multi-dimension kalman filter.
