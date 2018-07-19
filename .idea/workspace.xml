@@ -11,11 +11,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="kalman_filter_1d.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="kalman_filter_1d.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kalman_filter_1d.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+            <state>
+              <caret column="37" lean-forward="true" selection-start-column="37" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -50,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kalman_filter_md.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="kalman_filter_md.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kalman_filter_md.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="33" />
+            <state relative-caret-position="76">
+              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="18" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -91,10 +91,11 @@
         <option value="$PROJECT_DIR$/main_2d.py" />
         <option value="$PROJECT_DIR$/main_md.py" />
         <option value="$PROJECT_DIR$/kalman_filter_1d.py" />
+        <option value="$PROJECT_DIR$/kalman_filter_md.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-115" />
     <option name="y" value="455" />
     <option name="width" value="1940" />
@@ -236,7 +237,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966975" />
@@ -305,6 +306,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/kalman_filter_1d.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="37" lean-forward="true" selection-start-column="37" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main_md.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -317,15 +325,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kalman_filter_md.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kalman_filter_1d.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        <state relative-caret-position="76">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="18" selection-end-column="29" />
         </state>
       </provider>
     </entry>

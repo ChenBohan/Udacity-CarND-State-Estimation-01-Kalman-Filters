@@ -16,7 +16,6 @@ def kalman_filter(x, P, measurements):
         S = H * P * H.transpose() + R
         K = P * H.transpose() * S.inverse() # kalman gain
         x = x + K * y                       # next prediction
-
         P = (I - (K * H)) * P                # measurement update
 
         # prediction
