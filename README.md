@@ -20,8 +20,8 @@ Ref:
 
 ### Update
 
-- ``mean1````var1`` prior measurement probability
-- ``mean1````var1`` new measurement probability
+- ``mean1`` ``var1`` prior measurement probability
+- ``mean1`` ``var1`` new measurement probability
 ```python
 def update(mean1, var1, mean2, var2):
     new_mean = (var2 * mean1 + var1* mean2)
