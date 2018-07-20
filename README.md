@@ -53,10 +53,10 @@ def predict(mean1, var1, mean2, var2):
 
 <img src="https://github.com/ChenBohan/Auto-Car-Sensor-Fusion-01-Kalman-Filters/blob/master/readme_img/update.png" width = "30%" height = "30%" div align=center />
 
-- ``Z`` measurement matrix of nth measurement
-- ``y`` arrow calculation
-- ``H`` measurement function
-- ``K`` kalman gain
+- ``Z`` measurement matrix of nth measurement.
+- ``y`` compare the prediction with sensor measurement.
+- ``H`` measurement function.
+- ``K`` Kalman filter gain, combines the uncertainty of the prediction with the uncertainty of the sensor measurement. 
 
 ```python
 Z = m.matrix([[measurements[n]]])   
@@ -84,3 +84,7 @@ x = (F * x) + u
 ```python
 P = F * P * F.transpose()
 ```
+
+PS: x′=Fx+Bu+ν. But then Bu was crossed out, B is a matrix called the control input matrix and uu is the control vector.
+
+(For example, if we were in an autonomous vehicle tracking a bicycle, pedestrian or another car, we would not be able to model the internal forces of the other object; hence, we do not know for certain what the other object's acceleration is. Instead, we will set Bu = 0 and represent acceleration as a random noise with mean)
