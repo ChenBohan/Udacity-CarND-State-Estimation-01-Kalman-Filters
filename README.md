@@ -1,5 +1,30 @@
 # Auto-Car-Perception-01-Kalman-Filters
 Udacity Self-Driving Car Engineer Nanodegree: Kalman Filters
+
+## Basic concept
+
+### Kalman filter
+- a technique for **estimating the state** of a system
+- estimate a **continue** state
+    - (monte carlo localization -> **discrete** state)
+    - (particle filter -> **continue** state)
+- result: a **uni-model distribution**
+    - (monte carlo localization -> **multi-model distribution**)
+    - (particle filter -> **multi-model distribution** state)
+
+### Gaussian distribution
+- continue function
+- two parameters:
+    - mean: μ 
+    - variance: σ^2
+- <img src="https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D205/sign=2abf505a42166d223c77129473220945/342ac65c1038534384b650b09213b07eca808822.jpg" width = "20%" height = "20%" div align=center />
+
+<img src="https://github.com/ChenBohan/Auto-Car-Sensor-Fusion-01-Kalman-Filters/blob/master/readme_img/flow.png" width = "50%" height = "50%" div align=center />
+
+Ref:
+
+[How a Kalman filter works, in pictures.](http://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/)
+
 ## Content of this repository
 - `kalman_filter_1d.py` functions for 1d kalman filter.
 - `main_1d.py` a 1d kalman filter example.
@@ -7,14 +32,6 @@ Udacity Self-Driving Car Engineer Nanodegree: Kalman Filters
 - `main_md.py` a multi-dimension kalman filter example.
 - `matrix.py` matrix lib used in `kalman_filter_md.py`.
 
-## Kalman Filter
-Kalman filtering is an algorithm that uses a series of measurements observed over time, containing statistical noise and other inaccuracies, and produces estimates of unknown variables that tend to be more accurate than those based on a single measurement alone, by estimating a joint probability distribution over the variables for each timeframe.
-
-<img src="https://github.com/ChenBohan/Auto-Car-Sensor-Fusion-01-Kalman-Filters/blob/master/readme_img/flow.png" width = "50%" height = "50%" div align=center />
-
-Ref:
-
-[How a Kalman filter works, in pictures.](http://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/)
 
 ## 1D Kalman Filter
 
