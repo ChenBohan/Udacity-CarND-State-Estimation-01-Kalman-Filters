@@ -11,6 +11,9 @@ Udacity Self-Driving Car Engineer Nanodegree: Kalman Filters
 - result: a **uni-model distribution**
     - (monte carlo localization -> **multi-model distribution**)
     - (particle filter -> **multi-model distribution** state)
+- two main cycles:
+    - Measurement Update
+    - Motion Update
 
 ### Gaussian distribution
 - continue function
