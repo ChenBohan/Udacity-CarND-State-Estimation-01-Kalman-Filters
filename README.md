@@ -120,13 +120,19 @@ predict:  [10.99906346214631, 4.005829948139216]
     - measurement function
     
 
+<img src="https://github.com/ChenBohan/Robotics-Sensor-Fusion-01-Kalman-Filters/blob/master/readme_img/Kalman%20Filter%20Design.png" width = "60%" height = "60%" div align=center />
+    
+<img src="https://github.com/ChenBohan/Robotics-Sensor-Fusion-01-Kalman-Filters/blob/master/readme_img/kf_formula.png" width = "60%" height = "60%" div align=center />
+
 ## Multi-dimension Kalman Filter
 
 ### Measurement Update
 
 <img src="https://github.com/ChenBohan/Auto-Car-Sensor-Fusion-01-Kalman-Filters/blob/master/readme_img/update2.png" width = "30%" height = "30%" div align=center />
 
-<img src="https://github.com/ChenBohan/Auto-Car-Sensor-Fusion-01-Kalman-Filters/blob/master/readme_img/update.png" width = "30%" height = "30%" div align=center />
+<img src="https://github.com/ChenBohan/Robotics-Sensor-Fusion-01-Kalman-Filters/blob/master/readme_img/Combining%20Gaussians.png" width = "80%" height = "80%" div align=center />
+
+<img src="https://github.com/ChenBohan/Robotics-Sensor-Fusion-01-Kalman-Filters/blob/master/readme_img/put_it_togeteher" width = "80%" height = "80%" div align=center />
 
 - ``Z`` measurement matrix of nth measurement.
 - ``y`` compare the prediction with sensor measurement.
@@ -159,6 +165,9 @@ P = F * P * F.transpose()
 ### Result
 
 run the filter with these 3 measurement, we can estimate the velocity
+
+<img src="https://github.com/ChenBohan/Robotics-Sensor-Fusion-01-Kalman-Filters/blob/master/readme_img/predict_unmeasurement.png" width = "60%" height = "60%" div align=center />
+
 ```python
 measurements = [1, 2, 3]
 
