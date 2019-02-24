@@ -2,10 +2,8 @@
 Udacity Self-Driving Car Engineer Nanodegree: Kalman Filters
 
 ## Content of this repository
-- `kalman_filter_1d.py` functions for 1d kalman filter.
-- `main_1d.py` a 1d kalman filter example.
-- `kalman_filter_md.py` functions for multi-dimension kalman filter.
-- `main_md.py` a multi-dimension kalman filter example.
+- `kalman_filter_1d.py` 1d kalman filter.
+- `kalman_filter_md.py` multi-dimension kalman filter.
 - `matrix.py` matrix lib used in `kalman_filter_md.py`.
 
 ## Basic concept
@@ -25,11 +23,14 @@ Udacity Self-Driving Car Engineer Nanodegree: Kalman Filters
 <img src="https://github.com/ChenBohan/Auto-Car-Sensor-Fusion-01-Kalman-Filters/blob/master/readme_img/flow.png" width = "50%" height = "50%" div align=center />
 
 ### Gaussian distribution
+
 - continue function
 - two parameters:
     - mean: μ 
     - variance: σ^2
+    
 - <img src="https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D205/sign=2abf505a42166d223c77129473220945/342ac65c1038534384b650b09213b07eca808822.jpg" width = "20%" height = "20%" div align=center />
+
 ```python
 def gussian(mu, sigma2, x)
     return 1 / sqrt(2.0 * math.pi * sigma2) * exp(-0.5 * (x - mu)**2 / sigma2)
@@ -38,6 +39,7 @@ def gussian(mu, sigma2, x)
 ### Ref:
 
 [How a Kalman filter works, in pictures.](http://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/)
+
 [Chinese version](https://blog.csdn.net/luoshi006/article/details/52134323)
 
 
