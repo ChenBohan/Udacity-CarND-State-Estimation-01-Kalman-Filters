@@ -42,6 +42,8 @@ def gussian(mu, sigma2, x)
 
 [Chinese version](https://blog.csdn.net/luoshi006/article/details/52134323)
 
+[Noise in KF](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/0949fca6-b379-42af-a919-ee50aa304e6a/lessons/3612b91d-9c33-47ad-8067-a572a6c93837/concepts/df73ce8f-f476-49ed-a7d0-b67a657616fa)
+
 
 ## 1D Kalman Filter
 
