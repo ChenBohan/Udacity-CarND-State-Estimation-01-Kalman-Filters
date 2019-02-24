@@ -126,6 +126,8 @@ predict:  [10.99906346214631, 4.005829948139216]
 
 ## Multi-dimension Kalman Filter
 
+<img src="https://github.com/ChenBohan/Robotics-Sensor-Fusion-01-Kalman-Filters/blob/master/readme_img/final_formula.png" width = "80%" height = "80%" div align=center />
+
 ### Measurement Update
 
 <img src="https://github.com/ChenBohan/Auto-Car-Sensor-Fusion-01-Kalman-Filters/blob/master/readme_img/update2.png" width = "30%" height = "30%" div align=center />
