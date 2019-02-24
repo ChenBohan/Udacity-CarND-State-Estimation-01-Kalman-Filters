@@ -49,7 +49,7 @@ def gussian(mu, sigma2, x)
 
 Parameter Update of two gaussian
 
-<img src="https://github.com/ChenBohan/Robotics-Sensor-Fusion-01-Kalman-Filters/blob/master/readme_img/predict.png" width = "50%" height = "50%" div align=center />
+<img src="https://github.com/ChenBohan/Robotics-Sensor-Fusion-01-Kalman-Filters/blob/master/readme_img/measurement_update.png" width = "50%" height = "50%" div align=center />
 
 - ``mean1`` ``var1`` prior measurement probability
 - ``mean2`` ``var2`` new measurement probability
@@ -122,7 +122,7 @@ predict:  [10.99906346214631, 4.005829948139216]
 
 ## Multi-dimension Kalman Filter
 
-### Update
+### Measurement Update
 
 <img src="https://github.com/ChenBohan/Auto-Car-Sensor-Fusion-01-Kalman-Filters/blob/master/readme_img/update2.png" width = "30%" height = "30%" div align=center />
 
@@ -134,13 +134,12 @@ predict:  [10.99906346214631, 4.005829948139216]
 - ``K`` Kalman filter gain, combines the uncertainty of the prediction with the uncertainty of the sensor measurement. 
 
 ```python
-x = m.matrix([[0.],[0.]])   # initial state (location & velocity)
-P = m.matrix([[1000., 0.],[0., 1000]]) # initial uncertainty
-u = m.matrix([[0.],[0.]])   # external motion
-F = m.matrix([[1., 1.],[0., 1.]])   # next state function
-H = m.matrix([[1., 0.]])   # measurement function
-R = m.matrix([[1.]])        # measurement uncertainty
-I = m.matrix([[1., 0.],[0., 1.]])   # identity matrix
+Z = m.matrix([[measurements[n]]])   # measurement matrix of nth measurement
+y = Z - (H * x)                     # arrow calculation
+S = H * P * H.transpose() + R
+K = P * H.transpose() * S.inverse() # kalman gain
+x = x + K * y                       # next prediction
+P = (I - (K * H)) * P               # measurement update
 ```
 
 ### Predict
@@ -162,6 +161,14 @@ P = F * P * F.transpose()
 run the filter with these 3 measurement, we can estimate the velocity
 ```python
 measurements = [1, 2, 3]
+
+x = m.matrix([[0.],[0.]])   # initial state (location & velocity)
+P = m.matrix([[1000., 0.],[0., 1000]]) # initial uncertainty
+u = m.matrix([[0.],[0.]])   # external motion
+F = m.matrix([[1., 1.],[0., 1.]])   # next state function
+H = m.matrix([[1., 0.]])   # measurement function
+R = m.matrix([[1.]])        # measurement uncertainty
+I = m.matrix([[1., 0.],[0., 1.]])   # identity matrix
 ```
 
 ```
