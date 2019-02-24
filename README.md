@@ -84,7 +84,7 @@ for n in range(len(measurements)):
     print 'predict: ', [mu, sig]
 ```
 
-### Test data & result
+### Result
 
 ```
 measurements = [5.0, 6.0, 7.0, 9.0, 10.0]
@@ -109,6 +109,14 @@ predict:  [10.99906346214631, 4.005829948139216]
 
 ```
 
+## Kalman Filter Design
+
+- state
+    - state transition function
+- measurement
+    - measurement function
+    
+
 ## Multi-dimension Kalman Filter
 
 ### Update
@@ -123,32 +131,59 @@ predict:  [10.99906346214631, 4.005829948139216]
 - ``K`` Kalman filter gain, combines the uncertainty of the prediction with the uncertainty of the sensor measurement. 
 
 ```python
-Z = m.matrix([[measurements[n]]])   
-y = Z - (H * x)                     
-S = H * P * H.transpose() + R
-K = P * H.transpose() * S.inverse() 
-x = x + K * y                       
-P = (I - (K * H)) * P
+x = m.matrix([[0.],[0.]])   # initial state (location & velocity)
+P = m.matrix([[1000., 0.],[0., 1000]]) # initial uncertainty
+u = m.matrix([[0.],[0.]])   # external motion
+F = m.matrix([[1., 1.],[0., 1.]])   # next state function
+H = m.matrix([[1., 0.]])   # measurement function
+R = m.matrix([[1.]])        # measurement uncertainty
+I = m.matrix([[1., 0.],[0., 1.]])   # identity matrix
 ```
 
 ### Predict
-Predicted (a prior) state estimate:
 
 <img src="https://github.com/ChenBohan/Auto-Car-Sensor-Fusion-01-Kalman-Filters/blob/master/readme_img/predict.png" width = "30%" height = "30%" div align=center />
 
 - ``x`` initial state (location & velocity)
 - ``F`` next state function
 - ``u`` external motion
+- ``P`` initial uncertainty
 
 ```python
 x = (F * x) + u
-```
-
-- ``P`` initial uncertainty
-```python
 P = F * P * F.transpose()
 ```
 
-PS: x′=Fx+Bu+ν. But then Bu was crossed out, B is a matrix called the control input matrix and uu is the control vector.
+### Result
 
-(For example, if we were in an autonomous vehicle tracking a bicycle, pedestrian or another car, we would not be able to model the internal forces of the other object; hence, we do not know for certain what the other object's acceleration is. Instead, we will set Bu = 0 and represent acceleration as a random noise with mean)
+run the filter with these 3 measurement, we can estimate the velocity
+```python
+measurements = [1, 2, 3]
+```
+
+```
+x = 
+[0.9990009990009988]
+[0.0]
+ 
+P = 
+[1000.9990009990012, 1000.0]
+[1000.0, 1000.0]
+ 
+x = 
+[2.998002993017953]
+[0.9990019950129659]
+ 
+P = 
+[4.990024935169789, 2.9930179531228447]
+[2.9930179531228305, 1.9950129660888933]
+ 
+x = 
+[3.9996664447958645]
+[0.9999998335552873]
+ 
+P = 
+[2.3318904241194827, 0.9991676099921091]
+[0.9991676099921067, 0.49950058263974184]
+
+```
