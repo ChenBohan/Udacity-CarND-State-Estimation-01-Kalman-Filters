@@ -38,6 +38,7 @@ def gussian(mu, sigma2, x)
 ### Ref:
 
 [How a Kalman filter works, in pictures.](http://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/)
+[Chinese version](https://blog.csdn.net/luoshi006/article/details/52134323)
 
 
 ## 1D Kalman Filter
@@ -46,7 +47,7 @@ def gussian(mu, sigma2, x)
 
 Parameter Update of two gaussian
 
-<img src="https://github.com/ChenBohan/Auto-Car-Perception-01-Kalman-Filters/blob/master/readme_img
+<img src="https://github.com/ChenBohan/Robotics-Sensor-Fusion-01-Kalman-Filters/blob/master/readme_img/predict.png" width = "50%" height = "50%" div align=center />
 
 - ``mean1`` ``var1`` prior measurement probability
 - ``mean2`` ``var2`` new measurement probability
