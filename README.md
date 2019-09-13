@@ -1,4 +1,4 @@
-# Robotics-Sensor-Fusion-01-Kalman-Filters
+# CarND-10-Sensor-Fusion-Kalman-Filters
 Udacity Self-Driving Car Engineer Nanodegree: Kalman Filters
 
 ## Content of this repository
