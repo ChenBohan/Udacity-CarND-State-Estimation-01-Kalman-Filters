@@ -1,6 +1,10 @@
 # CarND-10-Sensor-Fusion-Kalman-Filters
 Udacity Self-Driving Car Engineer Nanodegree: Kalman Filters
 
+## Further Reading
+
+- [轻松理解卡尔曼滤波](https://www.jianshu.com/p/f6ce8943560c?from=singlemessage)
+
 ## Content of this repository
 - `kalman_filter_1d.py` 1D kalman filter with python.
 - `kalman_filter_1d.cpp` 1D kalman filter with c++.
