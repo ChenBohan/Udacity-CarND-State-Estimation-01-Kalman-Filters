@@ -119,7 +119,7 @@ predict:  [10.99906346214631, 4.005829948139216]
 
 ```
 
-## Kalman Filter Design
+## Multi-dimension Kalman Filter
 
 - state
     - state transition function
@@ -130,8 +130,6 @@ predict:  [10.99906346214631, 4.005829948139216]
 <img src="https://github.com/ChenBohan/Robotics-Sensor-Fusion-01-Kalman-Filters/blob/master/readme_img/Kalman%20Filter%20Design.png" width = "60%" height = "60%" div align=center />
     
 <img src="https://github.com/ChenBohan/Robotics-Sensor-Fusion-01-Kalman-Filters/blob/master/readme_img/kf_formula.png" width = "60%" height = "60%" div align=center />
-
-## Multi-dimension Kalman Filter
 
 <img src="https://github.com/ChenBohan/Robotics-Sensor-Fusion-01-Kalman-Filters/blob/master/readme_img/final_formula.png" width = "80%" height = "80%" div align=center />
 
