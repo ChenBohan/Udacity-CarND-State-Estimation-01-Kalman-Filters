@@ -1,5 +1,5 @@
-# CarND-10-Sensor-Fusion-Kalman-Filters
-Udacity Self-Driving Car Engineer Nanodegree: Kalman Filters
+# Udacity-CarND-State-Estimation-01-Kalman-Filters
+Udacity Self-Driving Car Engineer Nanodegree - Term 2 Lession 3 - Kalman Filters
 
 ## Further Reading
 
